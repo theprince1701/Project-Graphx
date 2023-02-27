@@ -4,7 +4,7 @@ Shader "Custom/Outline"
     {
         _MainTex("Albedo (RGB)", 2D) = "white" {}
         _OutlineColor ("Outline Color", Color) = (0,0,0,1)
-        _Outline ("Outline", Range(.002, 0.5)) = .005
+        _Outline ("Outline", Range(-100, 100)) = .005
     }
     SubShader
     {
@@ -32,6 +32,7 @@ Shader "Custom/Outline"
                 CGPROGRAM
                 #pragma vertex vert
                 #pragma fragment frag
+                #include "UnityCG.cginc"
 
             struct appdata
             {
@@ -57,9 +58,11 @@ Shader "Custom/Outline"
                 o.pos = UnityObjectToClipPos(v.vertex);
 
                 float3 norm = normalize(mul((float3x3)UNITY_MATRIX_IT_MV, v.normal));
+                float2 offset = TransformViewToProjection(norm.xy);
 
-                o.pos.xy += _Outline * o.pos.z;
+                o.pos.xy += offset * o.pos.z * _Outline;
                 o.color = _OutlineColor;
+
                 return o;
             }
 
