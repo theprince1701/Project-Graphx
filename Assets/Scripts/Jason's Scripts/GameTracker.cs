@@ -11,8 +11,11 @@ public class GameTracker : MonoBehaviour {
     [SerializeField] TMP_Text healthDisplay;
 
     float subTimer = 0f;
-    int timer = 20;
+    int timer = 60;
     [SerializeField] TMP_Text timerDisplay;
+
+    public GameObject winScreen;
+    public GameObject loseScreen;
 
     // Update is called once per frame
     void FixedUpdate(){
@@ -39,12 +42,18 @@ public class GameTracker : MonoBehaviour {
     }
 
     void WinGame(){
-        Debug.Log("You win!");
+        winScreen.SetActive(true);
+        loseScreen.SetActive(false);
+
+        FindObjectOfType<PlayerMovement>().enabled = false;
         gameActive = false;
     }
 
     void LoseGame(){
-        Debug.Log("You lose!");
+        winScreen.SetActive(false);
+        loseScreen.SetActive(true);
+        FindObjectOfType<PlayerMovement>().enabled = false;
+
         gameActive = false;
     }
 

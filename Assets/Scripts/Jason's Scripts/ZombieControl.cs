@@ -11,9 +11,11 @@ public class ZombieControl : MonoBehaviour {
     Vector3 targetDirection;
     bool calculatedThisFrame = false;
 
+    private Renderer _renderer;
+
     void Awake(){
         body = this.GetComponent<Rigidbody>();
-
+        _renderer = GetComponent<Renderer>();
     }
 
     void FixedUpdate(){
@@ -34,6 +36,16 @@ public class ZombieControl : MonoBehaviour {
         body.MovePosition(this.transform.position + (movement * moveSpeed) * Time.fixedDeltaTime);
     }
 
+    public void OnLook()
+    {
+        _renderer.material.SetFloat("_Outline", 14);
+    }
+
+    public void StopLook()
+    {
+        _renderer.material.SetFloat("_Outline", 0);
+    }
+    
     public void Die(){
         Destroy(this.gameObject);
     }
@@ -46,8 +58,9 @@ public class ZombieControl : MonoBehaviour {
 
         return targetDirection;
     }
-
+    
     void OnCollisionEnter(Collision thing){
+        Debug.Log(thing.gameObject.layer);
         if(thing.gameObject.layer == LayerMask.NameToLayer("Tower")){
             manager.DamageTower();
             Die();

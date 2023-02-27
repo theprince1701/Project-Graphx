@@ -24,6 +24,8 @@ public class Gun : MonoBehaviour
     private Quaternion _originalRotation;
     private Animator _animator;
 
+    private ZombieControl _currentZombie;
+
     private void Awake()
     {
         _originalRotation = transform.localRotation;
@@ -35,6 +37,38 @@ public class Gun : MonoBehaviour
         Sway();
         
         Fire();
+
+        if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out RaycastHit hit, 1000f,
+                shootLayer))
+        {
+            if (hit.collider.TryGetComponent(out ZombieControl zombie))
+            {
+                if (_currentZombie != null)
+                {
+                    _currentZombie.StopLook();
+                    _currentZombie = null;
+                }
+
+                _currentZombie = zombie;
+                _currentZombie.OnLook();
+            }
+            else
+            {
+                if (_currentZombie != null)
+                {
+                    _currentZombie.StopLook();
+                    _currentZombie = null;
+                }
+            }
+        }
+        else
+        {
+            if (_currentZombie != null)
+            {
+                _currentZombie.StopLook();
+                _currentZombie = null;
+            }
+        }
     }
 
     private void Fire()
@@ -53,9 +87,14 @@ public class Gun : MonoBehaviour
         if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out RaycastHit hit, 1000f,
                 shootLayer))
         {
+            if (hit.collider.TryGetComponent(out ZombieControl zombie))
+            {
+                zombie.Die();
+            }
+            
             Destroy(Instantiate(hitImpact, hit.point, Quaternion.LookRotation(hit.normal)), 1.0f);
         }
-        
+
         muzzleFlash.Play();
         _animator.SetTrigger("Fire");
 
