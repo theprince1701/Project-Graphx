@@ -3,11 +3,12 @@ Shader "Custom/DepthOfField"
     Properties
     {
         _MainTex ("Albedo (RGB)", 2D) = "white" {}
+        _DofTex("DofTex", 2D) = "white" {}
     }
    CGINCLUDE
    #include "UnityCG.cginc"
 
-    sampler2D _MainTex, _CameraDepthTexture, _CocTexture;
+    sampler2D _MainTex, _CameraDepthTexture, _CocTexture, _DofTex;
     float4 _MainTex_TexelSize;
 
     float _FocusDistance, _FocusRange, _BokehRadius;
@@ -158,6 +159,30 @@ Shader "Custom/DepthOfField"
             
             ENDCG
         }
+        
+        Pass 
+        {
+        
+            CGPROGRAM
+            #pragma vertex VertexProgram
+            #pragma fragment FragmentProgram
+
+            half4 FragmentProgram(Interpolators i) : SV_Target
+            {
+                half4 source = tex2D(_MainTex, i.uv).r;
+                half4 coc = tex2D(_CocTexture, i.uv).r;
+                half4 dof = tex2D(_DofTex, i.uv);
+
+                half dofStrength = smoothstep(0.1, 1, abs(coc));
+
+                half3 color = lerp(source.rgb, dof.rgb, dofStrength + dof.a - dofStrength * dof.a);
+
+                return half4(color,source.a);
+            }
+
+            
+            ENDCG
+            }
     }
     FallBack "Diffuse"
 }
