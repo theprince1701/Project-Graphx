@@ -188,7 +188,7 @@ public class Gun : MonoBehaviour
         y = Mathf.Clamp(y, -maxSway, maxSway);
         
         transform.localRotation = Quaternion.Lerp(transform.localRotation,  _originalRotation * Quaternion.Euler(-y, x, x), Time.deltaTime * swaySmoothing);
-        transform.localPosition = Vector3.Lerp(transform.localPosition, _originalPosition + new Vector3(x, y) * positionMultiplier,
+        transform.localPosition = Vector3.Lerp(transform.localPosition, _originalPosition + new Vector3(x, 0) * positionMultiplier,
             Time.deltaTime * swaySmoothing);
     }
 }

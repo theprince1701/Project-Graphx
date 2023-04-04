@@ -33,7 +33,7 @@ public class ZombieControl : MonoBehaviour {
     void Move(){
         Vector3 movement = new Vector3(targetDirection.x, 0f, targetDirection.z).normalized;
 
-    //    body.MovePosition(this.transform.position + (movement * moveSpeed) * Time.fixedDeltaTime);
+        body.MovePosition(this.transform.position + (movement * moveSpeed) * Time.fixedDeltaTime);
     }
 
     public void OnLook()

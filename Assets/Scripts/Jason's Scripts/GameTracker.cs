@@ -34,7 +34,7 @@ public class GameTracker : MonoBehaviour {
     }
 
     public void DamageTower(){
-    //    towerHealth--;
+        towerHealth--;
         healthDisplay.text = (towerHealth + " / 3 HEALTH REMAINING");
         if(towerHealth == 0){
             LoseGame();
