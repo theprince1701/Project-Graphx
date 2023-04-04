@@ -29,9 +29,6 @@ because we are only concered about the uv's in 2D because the lens is 2D, we can
 Finally, we can return it with a slight offset to center the reticle.
 
 
-The magic happens in the fragment shader, where it takes in the transformed vertex data and calculates the normal and tangent vectors at the current fragment. It then calculates the direction to the eye space origin and adds it to the normal vector to get an offset vector. The offset vector is transformed into tangent space using a 3x3 matrix formed by the tangent, the cross product of the normal and tangent, and the normal vectors. The resulting offset is used to sample the texture at the current fragment, and the color of the texture is returned as the output color of the shader.
-
-
 
 
 
