@@ -17,6 +17,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Damage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jason's Scripts 2/ZombieControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/Post Processing/Post Processing/Chromatic Abberation/ChromaticAbberation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/Post Processing/Post Processing/Depth Of Field/DepthOfField.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TextureManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -83,7 +84,8 @@
       <workItem from="1679950819232" duration="1377000" />
       <workItem from="1680147390103" duration="899000" />
       <workItem from="1680411378887" duration="2102000" />
-      <workItem from="1680548852133" duration="10591000" />
+      <workItem from="1680548852133" duration="17747000" />
+      <workItem from="1680619520336" duration="434000" />
     </task>
     <servers />
   </component>
