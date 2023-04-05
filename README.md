@@ -10,7 +10,7 @@ Bloom,
 Lens Distortion,
 Particle Effects,
 Gameplay Code,
-Animations,
+Animations.
 
 Jason Cole (100573404)
 
