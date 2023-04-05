@@ -4,13 +4,13 @@
 
 Liam McElwain (100825758)
 
-Scope Shader
-Colour Grading
-Bloom
-Lens Distortion
-Particle Effects
-Gameplay Code
-Animations
+Scope Shader,
+Colour Grading,
+Bloom,
+Lens Distortion,
+Particle Effects,
+Gameplay Code,
+Animations,
 
 Jason Cole (100573404)
 
