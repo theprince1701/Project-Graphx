@@ -73,7 +73,7 @@ To calculate the Vignette effect we first need to get the positions of the uvs, 
 
 
 # Color Grading
-
+![f6fd8ec620614212ed473d5c3cac91a2](https://user-images.githubusercontent.com/96841021/229969317-646365c3-c4a6-433d-831c-72d4fffd35a9.png)
 ![Colour_Grading_flowchart](https://user-images.githubusercontent.com/96841021/229959384-9940aeeb-0a96-434d-9e7e-d3509c312130.PNG)
 
 Color Grading was used in our project because its one of the few post processing effects that make the color pop. The effect enhances our scene because it makes the scene have more realistic lighting/colors and brings our game from a boring looking game, to a good looking game.
@@ -81,6 +81,7 @@ Color Grading was used in our project because its one of the few post processing
 # Bloom
 
 ![Bloom_flowchart](https://user-images.githubusercontent.com/96841021/229967620-49cc36d3-3cfb-4871-958c-23ff035a0a75.PNG)
+![e347a82d1141162490d73fe3d28703cc](https://user-images.githubusercontent.com/96841021/229969387-5d848e9a-8e40-443a-bda0-a94ac0736ef3.png)
 
 Bloom was implemented because it adds in a more realistic feeling to the screen. A quick rundown of how bloom works is they downscale the resolution of the screen 
 for a # of iterations to create a blur effect.
