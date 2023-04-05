@@ -21,6 +21,14 @@ Gameplay Code
 Environmental Art:
 https://assetstore.unity.com/packages/3d/environments/hand-painted-nature-kit-lite-69220
 
+# Written Reports
+
+Jason Cole (100573404)
+[JasonColeWrittenReport.pdf](https://github.com/theprince1701/Project-Graphx/files/11154816/JasonColeWrittenReport.pdf)
+
+Liam McElwain (100825758)
+[LiamMcElwainWrittenReports.pdf](https://github.com/theprince1701/Project-Graphx/files/11154817/LiamMcElwainWrittenReports.pdf)
+
 
 
 # Explanations
