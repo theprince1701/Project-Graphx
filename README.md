@@ -86,6 +86,10 @@ Bloom was implemented because it adds in a more realistic feeling to the screen.
 for a # of iterations to create a blur effect.
 
 # Lens Distortion
+![12f091aea708742c9e9be16c129acde1](https://user-images.githubusercontent.com/96841021/229968795-66a52311-c79a-467a-86ad-5614aee61816.png)
+
+
+Lens Distortion was implemented as a post-processing effect to the score camera to give depth/warped feeling that scopes have. Lens distortion manipulates the UVs of texture to distort the output of the object, or in this case our screen.
 
 # Toon Ramp
 
