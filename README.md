@@ -1,5 +1,27 @@
 # Project Graphx
 
+# Contributions
+
+Liam McElwain (100825758)
+
+Scope Shader
+Colour Grading
+Bloom
+Lens Distortion
+Particle Effects
+Gameplay Code
+Animations
+
+Jason Cole (100573404)
+
+Gameplay Code
+
+# Third Party Acknowledgements
+
+Environmental Art:
+https://assetstore.unity.com/packages/3d/environments/hand-painted-nature-kit-lite-69220
+
+
 
 # Explanations
 
