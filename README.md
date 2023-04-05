@@ -80,7 +80,18 @@ Color Grading was used in our project because its one of the few post processing
 
 # Bloom
 
+![Bloom_flowchart](https://user-images.githubusercontent.com/96841021/229967620-49cc36d3-3cfb-4871-958c-23ff035a0a75.PNG)
+
+Bloom was implemented because it adds in a more realistic feeling to the screen. A quick rundown of how bloom works is they downscale the resolution of the screen 
+for a # of iterations to create a blur effect.
+
 # Lens Distortion
+
+# Toon Ramp
+
+![c1fd719cd7972c0138259546e2eca457](https://user-images.githubusercontent.com/96841021/229968676-d4ecca7b-496a-409b-8b89-32416bff55b7.png)
+
+Toon ramp works by using a look-up texture to apply shading instead of regular shading. The texture gives you a color based on where you need the brightest point to be at one end.
 
 
 
