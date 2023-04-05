@@ -85,6 +85,9 @@ To calculate the Vignette effect we first need to get the positions of the uvs, 
 
 
 # Color Grading
+
+Developed by: Liam McElwain
+
 ![f6fd8ec620614212ed473d5c3cac91a2](https://user-images.githubusercontent.com/96841021/229969317-646365c3-c4a6-433d-831c-72d4fffd35a9.png)
 ![Colour_Grading_flowchart](https://user-images.githubusercontent.com/96841021/229959384-9940aeeb-0a96-434d-9e7e-d3509c312130.PNG)
 
