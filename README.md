@@ -21,6 +21,9 @@ Gameplay Code
 Environmental Art:
 https://assetstore.unity.com/packages/3d/environments/hand-painted-nature-kit-lite-69220
 
+Textures:
+https://assetstore.unity.com/packages/2d/textures-materials/roads/concrete-asphalt-02-52433
+
 # Written Reports
 
 Jason Cole (100573404)
