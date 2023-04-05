@@ -3,7 +3,7 @@
 
 # Explanations
 
-Scope Shader
+Reticle Drawing
 
 The base of the scope is made by simply rendering a camera with a low FOV to a scope lens object to act as a magnifying glass for the scope. But were stil missing a critical part of the implementation, the reticle.
 
@@ -29,7 +29,13 @@ because we are only concered about the uv's in 2D because the lens is 2D, we can
 Finally, we can return it with a slight offset to center the reticle.
 
 
+Vignette Drawing
 
+![aa251287b25e111fe16bf20fc00d0293](https://user-images.githubusercontent.com/96841021/229947760-0e703dfc-1fc2-4f9f-ad6b-7ee6df869554.png)
+
+We start off the shader very similar to the reticle drawing because we need to know about of the offset for this. Once we find the offset, we can sample the RenderTexture (attached to the Scope Camera) with the uv's calculated from the offset. 
+
+To calculate the Vignette effect we first need to get the positions of the uvs, we can store this in a local variable. Next, we need to get the length of the position vector. After this we can lerp between 1 and 0 based on a smoothstep function between the vignette radius, and vignette radius + vignettesmoothness, with the length of the position as our time). We do the smoothstep because plugging in our length directly will result in the vignette effect being too strong - using a smoothstep function allows us to not only control the intensity of the vignette, but also provide a smoother transition between unfaded/faded.
 
 
 
