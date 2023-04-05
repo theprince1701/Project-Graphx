@@ -55,6 +55,14 @@ public class GameTracker : MonoBehaviour {
         FindObjectOfType<PlayerMovement>().enabled = false;
 
         gameActive = false;
+
+        StartCoroutine(CloseGame());
+    }
+
+    private IEnumerator CloseGame()
+    {
+        yield return new WaitForSeconds(5f);
+        Application.Quit();
     }
 
     public bool CheckGameActive(){

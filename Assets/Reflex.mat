@@ -84,7 +84,7 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _TexScale: 0.05
+    - _TexScale: 0.06
     - _UVSec: 0
     - _VignetteAlpha: 1
     - _VignetteRadius: 0

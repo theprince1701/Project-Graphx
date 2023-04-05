@@ -78,18 +78,18 @@ public class Gun : MonoBehaviour
             {
                 if (_currentZombie != null)
                 {
-                 //   _currentZombie.StopLook();
+                    _currentZombie.StopLook();
                     _currentZombie = null;
                 }
 
                 _currentZombie = zombie;
-         //       _currentZombie.OnLook();
+                _currentZombie.OnLook();
             }
             else
             {
                 if (_currentZombie != null)
                 {
-              //      _currentZombie.StopLook();
+                    _currentZombie.StopLook();
                     _currentZombie = null;
                 }
             }
@@ -98,7 +98,7 @@ public class Gun : MonoBehaviour
         {
             if (_currentZombie != null)
             {
-            //    _currentZombie.StopLook();
+                _currentZombie.StopLook();
                 _currentZombie = null;
             }
         }

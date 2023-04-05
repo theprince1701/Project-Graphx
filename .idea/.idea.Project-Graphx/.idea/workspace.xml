@@ -16,6 +16,8 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/MaterialChanger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controls.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Damage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jason's Scripts 2/ZombieControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/Post Processing/Post Processing/Chromatic Abberation/ChromaticAbberation.cs" root0="FORCE_HIGHLIGHTING" />
@@ -42,6 +44,14 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/Desktop/ProjectGraphXBuild/Project Graphx.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\ledzf\Desktop\ProjectGraphXBuild" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="D:\Unity Editors\2021.3.9f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;E:\Unity Projects\Project-Graphx&quot; -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
@@ -85,7 +95,8 @@
       <workItem from="1680147390103" duration="899000" />
       <workItem from="1680411378887" duration="2102000" />
       <workItem from="1680548852133" duration="17747000" />
-      <workItem from="1680619520336" duration="434000" />
+      <workItem from="1680619520336" duration="1029000" />
+      <workItem from="1680634513389" duration="8370000" />
     </task>
     <servers />
   </component>

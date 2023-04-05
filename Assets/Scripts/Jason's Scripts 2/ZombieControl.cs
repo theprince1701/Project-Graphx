@@ -11,8 +11,11 @@ public class ZombieControl : MonoBehaviour {
     Vector3 targetDirection;
     bool calculatedThisFrame = false;
 
+    private Renderer _renderer;
+
     void Awake(){
         body = this.GetComponent<Rigidbody>();
+        _renderer = GetComponent<Renderer>();
 
     }
 
@@ -45,6 +48,16 @@ public class ZombieControl : MonoBehaviour {
         }
 
         return targetDirection;
+    }
+
+    public void OnLook()
+    {
+        _renderer.material.SetFloat("_Outline", .2f);
+    }
+
+    public void StopLook()
+    {
+        _renderer.material.SetFloat("_Outline", 0);
     }
 
     void OnCollisionEnter(Collision thing){

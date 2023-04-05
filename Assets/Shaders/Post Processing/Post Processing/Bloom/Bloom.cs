@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[ExecuteInEditMode]
+[ExecuteInEditMode, ImageEffectAllowedInSceneView]
 public class Bloom : MonoBehaviour
 {
     [SerializeField] private Shader bloomShader;
