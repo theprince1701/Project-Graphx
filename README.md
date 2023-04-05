@@ -50,11 +50,15 @@ We start off the shader very similar to the reticle drawing because we need to k
 To calculate the Vignette effect we first need to get the positions of the uvs, we can store this in a local variable. Next, we need to get the length of the position vector. After this we can lerp between 1 and 0 based on a smoothstep function between the vignette radius, and vignette radius + vignettesmoothness, with the length of the position as our time). We do the smoothstep because plugging in our length directly will result in the vignette effect being too strong - using a smoothstep function allows us to not only control the intensity of the vignette, but also provide a smoother transition between unfaded/faded.
 
 
-#Color Grading
+# Color Grading
 
-#Bloom
+![Colour_Grading_flowchart](https://user-images.githubusercontent.com/96841021/229959384-9940aeeb-0a96-434d-9e7e-d3509c312130.PNG)
 
-#Lens Distortion
+Color Grading was used in our project because its one of the few post processing effects that make the color pop. The effect enhances our scene because it makes the scene have more realistic lighting/colors and brings our game from a boring looking game, to a good looking game.
+
+# Bloom
+
+# Lens Distortion
 
 
 
