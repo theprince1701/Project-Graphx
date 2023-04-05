@@ -5,9 +5,7 @@
 
 
 
-#Scope 
-
-Reticle Drawing
+# Reticle Drawing
 
 ![c122b4618419d1942aa5bc4565bef5bc](https://user-images.githubusercontent.com/96841021/229958575-80c414e9-9dff-4ef5-a33f-623de0c2ac8b.png)
 ![34dd4513de9b2d3573a5aca4d941ed5c](https://user-images.githubusercontent.com/96841021/229958602-fcad3c76-4a21-4182-92a4-d275384fc5e1.png)
@@ -38,7 +36,7 @@ Finally, we can return it with a slight offset to center the reticle.
 
 
 
-Vignette Drawing
+# Vignette Drawing
 
 ![f6dfbb27cfa12b25cb705fe79b905fa7](https://user-images.githubusercontent.com/96841021/229958414-8acf2aaa-1a7d-4cc8-a624-ca63b21689ad.png)
 
