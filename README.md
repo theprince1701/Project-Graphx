@@ -103,7 +103,7 @@ Toon ramp works by using a look-up texture to apply shading instead of regular s
 ![7d7ab181b5a709611d5e08e012c843bc](https://user-images.githubusercontent.com/96841021/229969643-d17de881-dee9-4145-b414-3d396b810af9.png)
 ![860f14c32aeac09af4aa9b2f451067f2](https://user-images.githubusercontent.com/96841021/229969917-12738825-ad85-454a-abcb-adb0d921e8e1.png)
 
-The outline effect is on our enemies to indiciate to the player that they are currently looking at an enemy. To implement this, we used the normals of each fragment and multiplied them by some scalar value and draw a color at these positions. 
+The outline effect is on our enemies to indiciate to the player that they are currently looking at an enemy. To implement this, we used the normals of each vertex and multiplied them by some scalar value to calculate an offset for our vertex positions to draw a color (Outline Color) at calculated position.
 
 
 
